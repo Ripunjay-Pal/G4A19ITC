@@ -48,8 +48,7 @@ char *decrypt(char ciphertext[],int key)
 }
 void main()
 {
-  int n=0;
-  while (n==0)
+  while (1)
   {
     int k;
     char *j;
@@ -73,7 +72,7 @@ void main()
         break;
       case 3:
         printf("Bye!\n");
-        n=1;
+        exit(0);
         break;
       default:
         printf("Enter a valid option!\n");
